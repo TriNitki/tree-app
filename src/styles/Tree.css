@@ -1,0 +1,36 @@
+.tree-node {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+  
+.tree-node.root {
+  margin-left: 24px;
+}
+
+.tree-node button {
+  margin-left: 10px;
+}
+  
+.tree-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  width: 1px;
+  background-color: #555;
+}
+
+.tree-line::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 10px;
+  height: 1px;
+  background-color: #555;
+}
+
+.tree-line.last {
+  bottom: 15px;
+}  
